@@ -32,6 +32,7 @@ public class Usuario {
 	@Size(max = 5000, message = "O link da foto não pode ser maior do que 5000 caractéres")
 	private String foto;
 	
+	private String tipo;
 	
 	@NotNull(message = "O atributo Usuário é Obrigatório!")
 	@Email(message = "O atributo Usuário deve ser um email válido!")
@@ -98,5 +99,12 @@ public class Usuario {
 	}
 	public void setPostagem(List<Postagem> postagem) {
 		this.postagem = postagem;
+	}
+	public String getTipo() {
+		return tipo;
+	}
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
 	}	
+	
 }
