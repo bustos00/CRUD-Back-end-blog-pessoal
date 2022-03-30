@@ -22,7 +22,7 @@ public class Tema {
 	private long id;
 	
 	@NotNull(message = "O atributo Descrição é obrigatório")
-	private String descricao;
+	private String descricao; 
 	
 	@OneToMany(mappedBy = "tema", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("tema")
