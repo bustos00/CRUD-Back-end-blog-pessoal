@@ -43,44 +43,55 @@ public class Postagem {
 	@ManyToOne
 	@JsonIgnoreProperties("postagem")
 	private Usuario usuario;
-	
+
 	/*Insira os Getters and Setters*/
-	public long getId() {
+	
+	public Long getId() {
 		return id;
 	}
+
 	public void setId(Long id) {
 		this.id = id;
 	}
+
 	public String getTitulo() {
 		return titulo;
 	}
+
 	public void setTitulo(String titulo) {
 		this.titulo = titulo;
 	}
+
 	public String getTexto() {
 		return texto;
 	}
+
 	public void setTexto(String texto) {
 		this.texto = texto;
 	}
-	public Date getData() {
+
+	public Date getDate() {
 		return date;
 	}
-	public void setDate(Date data) {
-		this.date = data;
+
+	public void setDate(Date date) {
+		this.date = date;
 	}
-	
+
 	public Tema getTema() {
 		return tema;
 	}
+
 	public void setTema(Tema tema) {
 		this.tema = tema;
 	}
+
 	public Usuario getUsuario() {
 		return usuario;
 	}
+
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
 	}
-
+	
 }
