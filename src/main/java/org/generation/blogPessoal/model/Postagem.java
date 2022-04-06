@@ -68,17 +68,12 @@ public class Postagem {
 	public void setTexto(String texto) {
 		this.texto = texto;
 	}
-<<<<<<< HEAD
+
 
 	public Date getDate() {
 		return date;
 	}
 
-=======
-	public Date getDate() {
-		return date;
-	}
->>>>>>> 41f88d06e06d0bd01ab526d754ee21e4d8d4f8bb
 	public void setDate(Date date) {
 		this.date = date;
 	}
