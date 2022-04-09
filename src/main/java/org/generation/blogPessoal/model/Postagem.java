@@ -42,9 +42,8 @@ public class Postagem {
 	@ManyToOne
 	@JsonIgnoreProperties("postagem")
 	private Usuario usuario;
-
-	/*Insira os Getters and Setters*/
 	
+
 	public Long getId() {
 		return id;
 	}
@@ -69,7 +68,6 @@ public class Postagem {
 		this.texto = texto;
 	}
 
-
 	public Date getDate() {
 		return date;
 	}
@@ -93,5 +91,9 @@ public class Postagem {
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
 	}
+
+	/*Insira os Getters and Setters*/
+	
+	
 	
 }
